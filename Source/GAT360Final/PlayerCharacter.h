@@ -25,6 +25,9 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Health")
 	float GetHealth() const;
 
+	UFUNCTION(BlueprintCallable, Category = "Health")
+	void SetHealth(float NewHealth) { Health = NewHealth; ClampHealth(); }
+
 	// Function to apply damage
 	UFUNCTION(BlueprintCallable, Category = "Damage")
 	void ApplyDamage(float DamageAmount);
