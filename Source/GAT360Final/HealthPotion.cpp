@@ -34,7 +34,7 @@ bool AHealthPotion::ConsumePotion(AActor* Consumer)
         if (Character->Health >= Character->MaxHealth)
         {
             // Only consume the potion if it will actually restore health
-            Character->SetHealth(Character->Health + HealthRestoreAmount);
+            //Character->SetHealth(Character->Health + HealthRestoreAmount);
             return true;
         }
     }
